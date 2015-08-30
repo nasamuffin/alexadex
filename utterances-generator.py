@@ -12,8 +12,6 @@ phrases = [
     "WeaknessesIntent what hurts {FOO|Type} the most\n",
     "WeaknessesIntent what types are {FOO|Type} weak against\n",
 	"WeaknessesIntent what types {FOO|Type} are weak against\n",
-	"WeaknessesIntent what types are {FOO|Type} weak against\n",
-	"WeaknessesIntent what types {FOO|Type} are weak against\n",
     "WeaknessesIntent what types are {FOO|Type} weak to\n",
 	"WeaknessesIntent what types {FOO|Type} are weak to\n",
     "WeaknessesIntent what should I use against {FOO|Type}\n",

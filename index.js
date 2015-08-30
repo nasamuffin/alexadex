@@ -1,7 +1,8 @@
 /**
- * This sample demonstrates a simple skill built with the Amazon Alexa Skills Kit.
- * For additional samples, visit the Alexa Skills Kit developer documentation at
- * https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/getting-started-guide
+ * Alexadex
+ *
+ * Author: Emily Shaffer
+ * Looks up Pokemon strengths and weaknesses
  */
 
 // Route the incoming request based on type (LaunchRequest, IntentRequest,
@@ -98,24 +99,46 @@ function onSessionEnded(sessionEndedRequest, session) {
 
 // --------------- Functions that control the skill's behavior -----------------------
 
-var weaknesses = {};
-weaknesses["normal"] = "fighting";
-weaknesses["fighting"] = "flying, psychic, and fairy";
-weaknesses["flying"] = "rock, electric, and ice";
-weaknesses["poison"] = "ground and psychic";
-weaknesses["ground"] = "water, grass, and ice";
-weaknesses["rock"] = "fighting, ground, steel, water, and grass";
-weaknesses["bug"] = "flying, rock, and fire";
-weaknesses["ghost"] = "ghost and dark";
-weaknesses["steel"] = "fighting, ground, and fire";
-weaknesses["fire"] = "ground, rock, and fire";
-weaknesses["water"] = "grass and electric";
-weaknesses["grass"] = "flying, poison, bug, fire, and ice";
-weaknesses["electric"] = "ground";
-weaknesses["psychic"] = "bug, ghost, and dark";
-weaknesses["dragon"] = "ice, dragon, and fairy";
-weaknesses["dark"] = "fighting, bug, and fairy";
-weaknesses["fairy"] = "poison and steel";
+var weaknesses = {
+    "normal": ["fighting"],
+    "fighting": ["flying", "psychic", "fairy"],
+    "flying": ["rock", "electric", "ice"],
+    "poison": ["ground", "psychic"],
+    "ground": ["water", "grass", "ice"],
+    "rock": ["fighting", "ground", "steel", "water", "grass"],
+    "bug": ["flying", "rock", "fire"],
+    "ghost": ["ghost", "dark"],
+    "steel": ["fighting", "ground", "fire"],
+    "fire": ["ground", "rock", "fire"],
+    "water": ["grass", "electric"],
+    "grass": ["flying", "poison", "bug", "fire", "ice"],
+    "electric": ["ground"],
+    "psychic": ["bug", "ghost", "dark"],
+    "dragon": ["ice", "dragon", "fairy"],
+    "dark": ["fighting", "bug", "fairy"],
+    "fairy": ["poison", "steel"]
+}
+
+function naturalTypeList(types) {
+	phrase = "";
+	if (types.length == 1)
+	{
+		phrase = types[0];
+	}
+	else
+	{
+		for (type in types)
+		{
+			if (type == types.length - 1)
+			{
+				phrase += " and ";
+			}
+			phrase += types[type] + ", ";
+		}
+	}
+	
+	return phrase[0].toUpperCase + phrase.slice(1);
+}
 
 function getWelcomeResponse(callback) {
     // If we wanted to initialize the session to have some attributes we could add those here.
@@ -145,18 +168,12 @@ function getWeaknessesForType(intent, session, callback) {
     var speechOutput = "";
 
 	if (typeSlot && typeSlot.value in weaknesses) {
-		speechOutput = weaknesses[typeSlot.value] + " are super effective against " + typeSlot.value;
+		var weakList = naturalTypeList(weaknesses[typeSlot.value]);
+		speechOutput = weakList + (weakList.length == 1 ? " is" : " are") + " super effective against " + typeSlot.value + ".";
 	}
 
     callback(sessionAttributes,
              buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
-}
-
-
-function createFavoriteColorAttributes(favoriteColor) {
-    return {
-        favoriteColor: favoriteColor
-    };
 }
 
 function getColorFromSession(intent, session, callback) {
