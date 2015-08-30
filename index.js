@@ -75,8 +75,8 @@ function onIntent(intentRequest, session, callback) {
         intentName = intentRequest.intent.name;
 
     // Dispatch to your skill's intent handlers
-    if ("MyColorIsIntent" === intentName) {
-        setColorInSession(intent, session, callback);
+    if ("WeaknessesIntent" === intentName) {
+        getWeaknessesForType(intent, session, callback);
     } else if ("WhatsMyColorIntent" === intentName) {
         getColorFromSession(intent, session, callback);
     } else if ("HelpIntent" === intentName) {
@@ -98,6 +98,25 @@ function onSessionEnded(sessionEndedRequest, session) {
 
 // --------------- Functions that control the skill's behavior -----------------------
 
+var weaknesses = {};
+weaknesses["normal"] = "fighting";
+weaknesses["fighting"] = "flying, psychic, and fairy";
+weaknesses["flying"] = "rock, electric, and ice";
+weaknesses["poison"] = "ground and psychic";
+weaknesses["ground"] = "water, grass, and ice";
+weaknesses["rock"] = "fighting, ground, steel, water, and grass";
+weaknesses["bug"] = "flying, rock, and fire";
+weaknesses["ghost"] = "ghost and dark";
+weaknesses["steel"] = "fighting, ground, and fire";
+weaknesses["fire"] = "ground, rock, and fire";
+weaknesses["water"] = "grass and electric";
+weaknesses["grass"] = "flying, poison, bug, fire, and ice";
+weaknesses["electric"] = "ground";
+weaknesses["psychic"] = "bug, ghost, and dark";
+weaknesses["dragon"] = "ice, dragon, and fairy";
+weaknesses["dark"] = "fighting, bug, and fairy";
+weaknesses["fairy"] = "poison and steel";
+
 function getWelcomeResponse(callback) {
     // If we wanted to initialize the session to have some attributes we could add those here.
     var sessionAttributes = {};
@@ -117,29 +136,22 @@ function getWelcomeResponse(callback) {
 /**
  * Sets the color in the session and prepares the speech to reply to the user.
  */
-function setColorInSession(intent, session, callback) {
+function getWeaknessesForType(intent, session, callback) {
     var cardTitle = intent.name;
-    var favoriteColorSlot = intent.slots.Color;
-    var repromptText = "";
+    var typeSlot = intent.slots.Type;
+    var repromptText = null;
     var sessionAttributes = {};
-    var shouldEndSession = false;
+    var shouldEndSession = true;
     var speechOutput = "";
 
-    if (favoriteColorSlot) {
-        favoriteColor = favoriteColorSlot.value;
-        sessionAttributes = createFavoriteColorAttributes(favoriteColor);
-        speechOutput = "I now know your favorite color is " + favoriteColor + ". You can ask me "
-                + "your favorite color by saying, what's my favorite color?";
-        repromptText = "You can ask me your favorite color by saying, what's my favorite color?";
-    } else {
-        speechOutput = "I'm not sure what your favorite color is, please try again";
-        repromptText = "I'm not sure what your favorite color is, you can tell me your "
-                + "favorite color by saying, my favorite color is red";
-    }
+	if (typeSlot && typeSlot.value in weaknesses) {
+		speechOutput = weaknesses[typeSlot.value] + " are super effective against " + typeSlot.value;
+	}
 
     callback(sessionAttributes,
              buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
 }
+
 
 function createFavoriteColorAttributes(favoriteColor) {
     return {
