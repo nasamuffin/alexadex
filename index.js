@@ -147,7 +147,7 @@ function naturalTypeList(types, capitalize) {
 		phrase = types[0];
 	}
 	else if (types.length == 0) {
-		phrase = "No types ";
+		phrase = "no types";
 	}
 	else {
 		for (var type in types) {
