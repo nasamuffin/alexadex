@@ -8,6 +8,15 @@
             "type": "LITERAL"
           }
         ]
-      }
+      },
+	  {
+		"intent": "StrengthsIntent",
+		"slots": [
+		  {
+			"name": "Type",
+			"type": "LITERAL"
+		  }
+		]
+	  }
     ]
 }

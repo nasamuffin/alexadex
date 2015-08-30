@@ -78,8 +78,8 @@ function onIntent(intentRequest, session, callback) {
     // Dispatch to your skill's intent handlers
     if ("WeaknessesIntent" === intentName) {
         getWeaknessesForType(intent, session, callback);
-    } else if ("WhatsMyColorIntent" === intentName) {
-        getColorFromSession(intent, session, callback);
+    } else if ("StrengthsIntent" === intentName) {
+        getStrengthsForType(intent, session, callback);
     } else if ("HelpIntent" === intentName) {
         getWelcomeResponse(callback);
     } else {
@@ -100,44 +100,71 @@ function onSessionEnded(sessionEndedRequest, session) {
 // --------------- Functions that control the skill's behavior -----------------------
 
 var weaknesses = {
-    "normal": ["fighting"],
+    "normal":   ["fighting"],
     "fighting": ["flying", "psychic", "fairy"],
-    "flying": ["rock", "electric", "ice"],
-    "poison": ["ground", "psychic"],
-    "ground": ["water", "grass", "ice"],
-    "rock": ["fighting", "ground", "steel", "water", "grass"],
-    "bug": ["flying", "rock", "fire"],
-    "ghost": ["ghost", "dark"],
-    "steel": ["fighting", "ground", "fire"],
-    "fire": ["ground", "rock", "fire"],
-    "water": ["grass", "electric"],
-    "grass": ["flying", "poison", "bug", "fire", "ice"],
+    "flying":   ["rock", "electric", "ice"],
+    "poison":   ["ground", "psychic"],
+    "ground":   ["water", "grass", "ice"],
+    "rock":     ["fighting", "ground", "steel", "water", "grass"],
+    "bug":      ["flying", "rock", "fire"],
+    "ghost":    ["ghost", "dark"],
+    "steel":    ["fighting", "ground", "fire"],
+    "fire":     ["ground", "rock", "fire"],
+    "water":    ["grass", "electric"],
+    "grass":    ["flying", "poison", "bug", "fire", "ice"],
     "electric": ["ground"],
-    "psychic": ["bug", "ghost", "dark"],
-    "dragon": ["ice", "dragon", "fairy"],
-    "dark": ["fighting", "bug", "fairy"],
-    "fairy": ["poison", "steel"]
+    "psychic":  ["bug", "ghost", "dark"],
+	"ice":		["fighting", "rock", "steel", "fire"],
+    "dragon":   ["ice", "dragon", "fairy"],
+    "dark":     ["fighting", "bug", "fairy"],
+    "fairy":    ["poison", "steel"]
 }
 
-function naturalTypeList(types) {
+var strengths = {
+	"normal":   [],
+    "fighting": ["normal", "rock", "steel", "ice", "dark"],
+    "flying":   ["fighting", "bug", "grass"],
+    "poison":   ["grass"],
+    "ground":   ["poison", "rock", "steel", "fire", "electric"],
+    "rock":     ["flying", "bug", "fire", "ice"],
+    "bug":      ["grass", "psychic", "dark"],
+    "ghost":    ["ghost", "psychic"],
+    "steel":    ["rock", "ice", "fairy"],
+    "fire":     ["bug", "steel", "grass", "ice"],
+    "water":    ["ground", "rock", "fire"],
+    "grass":    ["ground", "rock", "water"],
+    "electric": ["flying", "water"],
+    "psychic":  ["fighting", "poison"],
+	"ice":		["flying", "ground", "grass", "dragon"],
+    "dragon":   ["ice"],
+    "dark":     ["bug", "psychic"],
+    "fairy":    ["fighting", "dragon", "dark"]
+}
+
+function naturalTypeList(types, capitalize) {
 	phrase = "";
-	if (types.length == 1)
-	{
+	if (types.length == 1) {
 		phrase = types[0];
 	}
-	else
-	{
-		for (type in types)
-		{
-			if (type == types.length - 1)
-			{
-				phrase += " and ";
+	else if (types.length == 0) {
+		phrase = "No types ";
+	}
+	else {
+		for (var type in types) {
+			if (type == types.length - 1) {
+				phrase += " and " + types[type];
 			}
-			phrase += types[type] + ", ";
+			else {
+				phrase += types[type] + ", ";
+			}
 		}
 	}
 	
-	return phrase[0].toUpperCase + phrase.slice(1);
+	return phrase;
+}
+
+function capitalize(str) {
+	return str[0].toUpperCase() + str.slice(1);
 }
 
 function getWelcomeResponse(callback) {
@@ -157,10 +184,10 @@ function getWelcomeResponse(callback) {
 }
 
 /**
- * Sets the color in the session and prepares the speech to reply to the user.
+ * Displays which types are super-effective against the given type
  */
 function getWeaknessesForType(intent, session, callback) {
-    var cardTitle = intent.name;
+    var cardTitle = "Weaknesses";
     var typeSlot = intent.slots.Type;
     var repromptText = null;
     var sessionAttributes = {};
@@ -168,40 +195,34 @@ function getWeaknessesForType(intent, session, callback) {
     var speechOutput = "";
 
 	if (typeSlot && typeSlot.value in weaknesses) {
-		var weakList = naturalTypeList(weaknesses[typeSlot.value]);
-		speechOutput = weakList + (weakList.length == 1 ? " is" : " are") + " super effective against " + typeSlot.value + ".";
+		cardTitle += " of " + typeSlot.value;
+		var weakList = naturalTypeList(weaknesses[typeSlot.value], true);
+		speechOutput = capitalize(weakList) + " attacks are super effective against " + typeSlot.value + ".";
 	}
 
     callback(sessionAttributes,
              buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
 }
 
-function getColorFromSession(intent, session, callback) {
-    var cardTitle = intent.name;
-    var favoriteColor;
+/**
+ * Displays which types the given type is super-effective against
+ */
+function getStrengthsForType(intent, session, callback) {
+    var cardTitle = "Strengths";
+    var typeSlot = intent.slots.Type;
     var repromptText = null;
     var sessionAttributes = {};
-    var shouldEndSession = false;
+    var shouldEndSession = true;
     var speechOutput = "";
 
-    if(session.attributes) {
-        favoriteColor = session.attributes.favoriteColor;
-    }
+	if (typeSlot && typeSlot.value in strengths) {
+		cardTitle += " of " + typeSlot.value;
+		var strongList = naturalTypeList(strengths[typeSlot.value], false);
+		speechOutput = capitalize(typeSlot.value) + " attacks are super effective against " + strongList + ".";
+	}
 
-    if(favoriteColor) {
-        speechOutput = "Your favorite color is " + favoriteColor + ", goodbye";
-        shouldEndSession = true;
-    }
-    else {
-        speechOutput = "I'm not sure what your favorite color is, you can say, my favorite color "
-                + " is red";
-    }
-
-    // Setting repromptText to null signifies that we do not want to reprompt the user.
-    // If the user does not respond or says something that is not understood, the session
-    // will end.
     callback(sessionAttributes,
-             buildSpeechletResponse(intent.name, speechOutput, repromptText, shouldEndSession));
+             buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
 }
 
 // --------------- Helpers that build all of the responses -----------------------

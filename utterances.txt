@@ -376,3 +376,165 @@ WeaknessesIntent which types are good against {ice|Type}
 WeaknessesIntent which types are good against {dragon|Type}
 WeaknessesIntent which types are good against {dark|Type}
 WeaknessesIntent which types are good against {fairy|Type}
+StrengthsIntent what {normal|Type} is strong against
+StrengthsIntent what {fighting|Type} is strong against
+StrengthsIntent what {flying|Type} is strong against
+StrengthsIntent what {poison|Type} is strong against
+StrengthsIntent what {ground|Type} is strong against
+StrengthsIntent what {rock|Type} is strong against
+StrengthsIntent what {bug|Type} is strong against
+StrengthsIntent what {ghost|Type} is strong against
+StrengthsIntent what {steel|Type} is strong against
+StrengthsIntent what {fire|Type} is strong against
+StrengthsIntent what {water|Type} is strong against
+StrengthsIntent what {grass|Type} is strong against
+StrengthsIntent what {electric|Type} is strong against
+StrengthsIntent what {psychic|Type} is strong against
+StrengthsIntent what {ice|Type} is strong against
+StrengthsIntent what {dragon|Type} is strong against
+StrengthsIntent what {dark|Type} is strong against
+StrengthsIntent what {fairy|Type} is strong against
+StrengthsIntent which types {normal|Type} is strong against
+StrengthsIntent which types {fighting|Type} is strong against
+StrengthsIntent which types {flying|Type} is strong against
+StrengthsIntent which types {poison|Type} is strong against
+StrengthsIntent which types {ground|Type} is strong against
+StrengthsIntent which types {rock|Type} is strong against
+StrengthsIntent which types {bug|Type} is strong against
+StrengthsIntent which types {ghost|Type} is strong against
+StrengthsIntent which types {steel|Type} is strong against
+StrengthsIntent which types {fire|Type} is strong against
+StrengthsIntent which types {water|Type} is strong against
+StrengthsIntent which types {grass|Type} is strong against
+StrengthsIntent which types {electric|Type} is strong against
+StrengthsIntent which types {psychic|Type} is strong against
+StrengthsIntent which types {ice|Type} is strong against
+StrengthsIntent which types {dragon|Type} is strong against
+StrengthsIntent which types {dark|Type} is strong against
+StrengthsIntent which types {fairy|Type} is strong against
+StrengthsIntent what {normal|Type} is super effective against
+StrengthsIntent what {fighting|Type} is super effective against
+StrengthsIntent what {flying|Type} is super effective against
+StrengthsIntent what {poison|Type} is super effective against
+StrengthsIntent what {ground|Type} is super effective against
+StrengthsIntent what {rock|Type} is super effective against
+StrengthsIntent what {bug|Type} is super effective against
+StrengthsIntent what {ghost|Type} is super effective against
+StrengthsIntent what {steel|Type} is super effective against
+StrengthsIntent what {fire|Type} is super effective against
+StrengthsIntent what {water|Type} is super effective against
+StrengthsIntent what {grass|Type} is super effective against
+StrengthsIntent what {electric|Type} is super effective against
+StrengthsIntent what {psychic|Type} is super effective against
+StrengthsIntent what {ice|Type} is super effective against
+StrengthsIntent what {dragon|Type} is super effective against
+StrengthsIntent what {dark|Type} is super effective against
+StrengthsIntent what {fairy|Type} is super effective against
+StrengthsIntent what {normal|Type} deals the most damage to
+StrengthsIntent what {fighting|Type} deals the most damage to
+StrengthsIntent what {flying|Type} deals the most damage to
+StrengthsIntent what {poison|Type} deals the most damage to
+StrengthsIntent what {ground|Type} deals the most damage to
+StrengthsIntent what {rock|Type} deals the most damage to
+StrengthsIntent what {bug|Type} deals the most damage to
+StrengthsIntent what {ghost|Type} deals the most damage to
+StrengthsIntent what {steel|Type} deals the most damage to
+StrengthsIntent what {fire|Type} deals the most damage to
+StrengthsIntent what {water|Type} deals the most damage to
+StrengthsIntent what {grass|Type} deals the most damage to
+StrengthsIntent what {electric|Type} deals the most damage to
+StrengthsIntent what {psychic|Type} deals the most damage to
+StrengthsIntent what {ice|Type} deals the most damage to
+StrengthsIntent what {dragon|Type} deals the most damage to
+StrengthsIntent what {dark|Type} deals the most damage to
+StrengthsIntent what {fairy|Type} deals the most damage to
+StrengthsIntent which types {normal|Type} hurts the most
+StrengthsIntent which types {fighting|Type} hurts the most
+StrengthsIntent which types {flying|Type} hurts the most
+StrengthsIntent which types {poison|Type} hurts the most
+StrengthsIntent which types {ground|Type} hurts the most
+StrengthsIntent which types {rock|Type} hurts the most
+StrengthsIntent which types {bug|Type} hurts the most
+StrengthsIntent which types {ghost|Type} hurts the most
+StrengthsIntent which types {steel|Type} hurts the most
+StrengthsIntent which types {fire|Type} hurts the most
+StrengthsIntent which types {water|Type} hurts the most
+StrengthsIntent which types {grass|Type} hurts the most
+StrengthsIntent which types {electric|Type} hurts the most
+StrengthsIntent which types {psychic|Type} hurts the most
+StrengthsIntent which types {ice|Type} hurts the most
+StrengthsIntent which types {dragon|Type} hurts the most
+StrengthsIntent which types {dark|Type} hurts the most
+StrengthsIntent which types {fairy|Type} hurts the most
+StrengthsIntent what types I should use {normal|Type} against
+StrengthsIntent what types I should use {fighting|Type} against
+StrengthsIntent what types I should use {flying|Type} against
+StrengthsIntent what types I should use {poison|Type} against
+StrengthsIntent what types I should use {ground|Type} against
+StrengthsIntent what types I should use {rock|Type} against
+StrengthsIntent what types I should use {bug|Type} against
+StrengthsIntent what types I should use {ghost|Type} against
+StrengthsIntent what types I should use {steel|Type} against
+StrengthsIntent what types I should use {fire|Type} against
+StrengthsIntent what types I should use {water|Type} against
+StrengthsIntent what types I should use {grass|Type} against
+StrengthsIntent what types I should use {electric|Type} against
+StrengthsIntent what types I should use {psychic|Type} against
+StrengthsIntent what types I should use {ice|Type} against
+StrengthsIntent what types I should use {dragon|Type} against
+StrengthsIntent what types I should use {dark|Type} against
+StrengthsIntent what types I should use {fairy|Type} against
+StrengthsIntent which types {normal|Type} are super effective against
+StrengthsIntent which types {fighting|Type} are super effective against
+StrengthsIntent which types {flying|Type} are super effective against
+StrengthsIntent which types {poison|Type} are super effective against
+StrengthsIntent which types {ground|Type} are super effective against
+StrengthsIntent which types {rock|Type} are super effective against
+StrengthsIntent which types {bug|Type} are super effective against
+StrengthsIntent which types {ghost|Type} are super effective against
+StrengthsIntent which types {steel|Type} are super effective against
+StrengthsIntent which types {fire|Type} are super effective against
+StrengthsIntent which types {water|Type} are super effective against
+StrengthsIntent which types {grass|Type} are super effective against
+StrengthsIntent which types {electric|Type} are super effective against
+StrengthsIntent which types {psychic|Type} are super effective against
+StrengthsIntent which types {ice|Type} are super effective against
+StrengthsIntent which types {dragon|Type} are super effective against
+StrengthsIntent which types {dark|Type} are super effective against
+StrengthsIntent which types {fairy|Type} are super effective against
+StrengthsIntent what {normal|Type} is good against
+StrengthsIntent what {fighting|Type} is good against
+StrengthsIntent what {flying|Type} is good against
+StrengthsIntent what {poison|Type} is good against
+StrengthsIntent what {ground|Type} is good against
+StrengthsIntent what {rock|Type} is good against
+StrengthsIntent what {bug|Type} is good against
+StrengthsIntent what {ghost|Type} is good against
+StrengthsIntent what {steel|Type} is good against
+StrengthsIntent what {fire|Type} is good against
+StrengthsIntent what {water|Type} is good against
+StrengthsIntent what {grass|Type} is good against
+StrengthsIntent what {electric|Type} is good against
+StrengthsIntent what {psychic|Type} is good against
+StrengthsIntent what {ice|Type} is good against
+StrengthsIntent what {dragon|Type} is good against
+StrengthsIntent what {dark|Type} is good against
+StrengthsIntent what {fairy|Type} is good against
+StrengthsIntent which types {normal|Type} are good against
+StrengthsIntent which types {fighting|Type} are good against
+StrengthsIntent which types {flying|Type} are good against
+StrengthsIntent which types {poison|Type} are good against
+StrengthsIntent which types {ground|Type} are good against
+StrengthsIntent which types {rock|Type} are good against
+StrengthsIntent which types {bug|Type} are good against
+StrengthsIntent which types {ghost|Type} are good against
+StrengthsIntent which types {steel|Type} are good against
+StrengthsIntent which types {fire|Type} are good against
+StrengthsIntent which types {water|Type} are good against
+StrengthsIntent which types {grass|Type} are good against
+StrengthsIntent which types {electric|Type} are good against
+StrengthsIntent which types {psychic|Type} are good against
+StrengthsIntent which types {ice|Type} are good against
+StrengthsIntent which types {dragon|Type} are good against
+StrengthsIntent which types {dark|Type} are good against
+StrengthsIntent which types {fairy|Type} are good against

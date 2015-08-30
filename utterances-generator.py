@@ -19,8 +19,18 @@ phrases = [
     "WeaknessesIntent what should I attack {FOO|Type} with\n",
 	"WeaknessesIntent what I should attack {FOO|Type} with\n",
     "WeaknessesIntent which attacks are good against {FOO|Type}\n",
-    "WeaknessesIntent which types are good against {FOO|Type}\n"
+    "WeaknessesIntent which types are good against {FOO|Type}\n",
+	"StrengthsIntent what {FOO|Type} is strong against\n",
+	"StrengthsIntent which types {FOO|Type} is strong against\n",
+	"StrengthsIntent what {FOO|Type} is super effective against\n",
+	"StrengthsIntent what {FOO|Type} deals the most damage to\n",
+	"StrengthsIntent which types {FOO|Type} hurts the most\n",
+	"StrengthsIntent what types I should use {FOO|Type} against\n",
+	"StrengthsIntent which types {FOO|Type} are super effective against\n",
+	"StrengthsIntent what {FOO|Type} is good against\n",
+	"StrengthsIntent which types {FOO|Type} are good against\n"
 ]
+
 types = [
     "normal",
     "fighting",
