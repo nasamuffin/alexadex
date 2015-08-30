@@ -16,6 +16,24 @@ WeaknessesIntent what is {ice|Type} weak against
 WeaknessesIntent what is {dragon|Type} weak against
 WeaknessesIntent what is {dark|Type} weak against
 WeaknessesIntent what is {fairy|Type} weak against
+WeaknessesIntent what {normal|Type} is weak against
+WeaknessesIntent what {fighting|Type} is weak against
+WeaknessesIntent what {flying|Type} is weak against
+WeaknessesIntent what {poison|Type} is weak against
+WeaknessesIntent what {ground|Type} is weak against
+WeaknessesIntent what {rock|Type} is weak against
+WeaknessesIntent what {bug|Type} is weak against
+WeaknessesIntent what {ghost|Type} is weak against
+WeaknessesIntent what {steel|Type} is weak against
+WeaknessesIntent what {fire|Type} is weak against
+WeaknessesIntent what {water|Type} is weak against
+WeaknessesIntent what {grass|Type} is weak against
+WeaknessesIntent what {electric|Type} is weak against
+WeaknessesIntent what {psychic|Type} is weak against
+WeaknessesIntent what {ice|Type} is weak against
+WeaknessesIntent what {dragon|Type} is weak against
+WeaknessesIntent what {dark|Type} is weak against
+WeaknessesIntent what {fairy|Type} is weak against
 WeaknessesIntent what are the weaknesses for {normal|Type}
 WeaknessesIntent what are the weaknesses for {fighting|Type}
 WeaknessesIntent what are the weaknesses for {flying|Type}
@@ -34,6 +52,24 @@ WeaknessesIntent what are the weaknesses for {ice|Type}
 WeaknessesIntent what are the weaknesses for {dragon|Type}
 WeaknessesIntent what are the weaknesses for {dark|Type}
 WeaknessesIntent what are the weaknesses for {fairy|Type}
+WeaknessesIntent what the weaknesses are for {normal|Type}
+WeaknessesIntent what the weaknesses are for {fighting|Type}
+WeaknessesIntent what the weaknesses are for {flying|Type}
+WeaknessesIntent what the weaknesses are for {poison|Type}
+WeaknessesIntent what the weaknesses are for {ground|Type}
+WeaknessesIntent what the weaknesses are for {rock|Type}
+WeaknessesIntent what the weaknesses are for {bug|Type}
+WeaknessesIntent what the weaknesses are for {ghost|Type}
+WeaknessesIntent what the weaknesses are for {steel|Type}
+WeaknessesIntent what the weaknesses are for {fire|Type}
+WeaknessesIntent what the weaknesses are for {water|Type}
+WeaknessesIntent what the weaknesses are for {grass|Type}
+WeaknessesIntent what the weaknesses are for {electric|Type}
+WeaknessesIntent what the weaknesses are for {psychic|Type}
+WeaknessesIntent what the weaknesses are for {ice|Type}
+WeaknessesIntent what the weaknesses are for {dragon|Type}
+WeaknessesIntent what the weaknesses are for {dark|Type}
+WeaknessesIntent what the weaknesses are for {fairy|Type}
 WeaknessesIntent what does {normal|Type} lose to
 WeaknessesIntent what does {fighting|Type} lose to
 WeaknessesIntent what does {flying|Type} lose to
@@ -52,6 +88,24 @@ WeaknessesIntent what does {ice|Type} lose to
 WeaknessesIntent what does {dragon|Type} lose to
 WeaknessesIntent what does {dark|Type} lose to
 WeaknessesIntent what does {fairy|Type} lose to
+WeaknessesIntent what {normal|Type} loses to
+WeaknessesIntent what {fighting|Type} loses to
+WeaknessesIntent what {flying|Type} loses to
+WeaknessesIntent what {poison|Type} loses to
+WeaknessesIntent what {ground|Type} loses to
+WeaknessesIntent what {rock|Type} loses to
+WeaknessesIntent what {bug|Type} loses to
+WeaknessesIntent what {ghost|Type} loses to
+WeaknessesIntent what {steel|Type} loses to
+WeaknessesIntent what {fire|Type} loses to
+WeaknessesIntent what {water|Type} loses to
+WeaknessesIntent what {grass|Type} loses to
+WeaknessesIntent what {electric|Type} loses to
+WeaknessesIntent what {psychic|Type} loses to
+WeaknessesIntent what {ice|Type} loses to
+WeaknessesIntent what {dragon|Type} loses to
+WeaknessesIntent what {dark|Type} loses to
+WeaknessesIntent what {fairy|Type} loses to
 WeaknessesIntent what are {normal|Type} weaknesses
 WeaknessesIntent what are {fighting|Type} weaknesses
 WeaknessesIntent what are {flying|Type} weaknesses
@@ -70,6 +124,24 @@ WeaknessesIntent what are {ice|Type} weaknesses
 WeaknessesIntent what are {dragon|Type} weaknesses
 WeaknessesIntent what are {dark|Type} weaknesses
 WeaknessesIntent what are {fairy|Type} weaknesses
+WeaknessesIntent what {normal|Type} weaknesses are
+WeaknessesIntent what {fighting|Type} weaknesses are
+WeaknessesIntent what {flying|Type} weaknesses are
+WeaknessesIntent what {poison|Type} weaknesses are
+WeaknessesIntent what {ground|Type} weaknesses are
+WeaknessesIntent what {rock|Type} weaknesses are
+WeaknessesIntent what {bug|Type} weaknesses are
+WeaknessesIntent what {ghost|Type} weaknesses are
+WeaknessesIntent what {steel|Type} weaknesses are
+WeaknessesIntent what {fire|Type} weaknesses are
+WeaknessesIntent what {water|Type} weaknesses are
+WeaknessesIntent what {grass|Type} weaknesses are
+WeaknessesIntent what {electric|Type} weaknesses are
+WeaknessesIntent what {psychic|Type} weaknesses are
+WeaknessesIntent what {ice|Type} weaknesses are
+WeaknessesIntent what {dragon|Type} weaknesses are
+WeaknessesIntent what {dark|Type} weaknesses are
+WeaknessesIntent what {fairy|Type} weaknesses are
 WeaknessesIntent what is super effective against {normal|Type}
 WeaknessesIntent what is super effective against {fighting|Type}
 WeaknessesIntent what is super effective against {flying|Type}
@@ -142,6 +214,60 @@ WeaknessesIntent what types are {ice|Type} weak against
 WeaknessesIntent what types are {dragon|Type} weak against
 WeaknessesIntent what types are {dark|Type} weak against
 WeaknessesIntent what types are {fairy|Type} weak against
+WeaknessesIntent what types {normal|Type} are weak against
+WeaknessesIntent what types {fighting|Type} are weak against
+WeaknessesIntent what types {flying|Type} are weak against
+WeaknessesIntent what types {poison|Type} are weak against
+WeaknessesIntent what types {ground|Type} are weak against
+WeaknessesIntent what types {rock|Type} are weak against
+WeaknessesIntent what types {bug|Type} are weak against
+WeaknessesIntent what types {ghost|Type} are weak against
+WeaknessesIntent what types {steel|Type} are weak against
+WeaknessesIntent what types {fire|Type} are weak against
+WeaknessesIntent what types {water|Type} are weak against
+WeaknessesIntent what types {grass|Type} are weak against
+WeaknessesIntent what types {electric|Type} are weak against
+WeaknessesIntent what types {psychic|Type} are weak against
+WeaknessesIntent what types {ice|Type} are weak against
+WeaknessesIntent what types {dragon|Type} are weak against
+WeaknessesIntent what types {dark|Type} are weak against
+WeaknessesIntent what types {fairy|Type} are weak against
+WeaknessesIntent what types are {normal|Type} weak against
+WeaknessesIntent what types are {fighting|Type} weak against
+WeaknessesIntent what types are {flying|Type} weak against
+WeaknessesIntent what types are {poison|Type} weak against
+WeaknessesIntent what types are {ground|Type} weak against
+WeaknessesIntent what types are {rock|Type} weak against
+WeaknessesIntent what types are {bug|Type} weak against
+WeaknessesIntent what types are {ghost|Type} weak against
+WeaknessesIntent what types are {steel|Type} weak against
+WeaknessesIntent what types are {fire|Type} weak against
+WeaknessesIntent what types are {water|Type} weak against
+WeaknessesIntent what types are {grass|Type} weak against
+WeaknessesIntent what types are {electric|Type} weak against
+WeaknessesIntent what types are {psychic|Type} weak against
+WeaknessesIntent what types are {ice|Type} weak against
+WeaknessesIntent what types are {dragon|Type} weak against
+WeaknessesIntent what types are {dark|Type} weak against
+WeaknessesIntent what types are {fairy|Type} weak against
+WeaknessesIntent what types {normal|Type} are weak against
+WeaknessesIntent what types {fighting|Type} are weak against
+WeaknessesIntent what types {flying|Type} are weak against
+WeaknessesIntent what types {poison|Type} are weak against
+WeaknessesIntent what types {ground|Type} are weak against
+WeaknessesIntent what types {rock|Type} are weak against
+WeaknessesIntent what types {bug|Type} are weak against
+WeaknessesIntent what types {ghost|Type} are weak against
+WeaknessesIntent what types {steel|Type} are weak against
+WeaknessesIntent what types {fire|Type} are weak against
+WeaknessesIntent what types {water|Type} are weak against
+WeaknessesIntent what types {grass|Type} are weak against
+WeaknessesIntent what types {electric|Type} are weak against
+WeaknessesIntent what types {psychic|Type} are weak against
+WeaknessesIntent what types {ice|Type} are weak against
+WeaknessesIntent what types {dragon|Type} are weak against
+WeaknessesIntent what types {dark|Type} are weak against
+WeaknessesIntent what types {fairy|Type} are weak against
 WeaknessesIntent what types are {normal|Type} weak to
 WeaknessesIntent what types are {fighting|Type} weak to
 WeaknessesIntent what types are {flying|Type} weak to
@@ -160,6 +286,24 @@ WeaknessesIntent what types are {ice|Type} weak to
 WeaknessesIntent what types are {dragon|Type} weak to
 WeaknessesIntent what types are {dark|Type} weak to
 WeaknessesIntent what types are {fairy|Type} weak to
+WeaknessesIntent what types {normal|Type} are weak to
+WeaknessesIntent what types {fighting|Type} are weak to
+WeaknessesIntent what types {flying|Type} are weak to
+WeaknessesIntent what types {poison|Type} are weak to
+WeaknessesIntent what types {ground|Type} are weak to
+WeaknessesIntent what types {rock|Type} are weak to
+WeaknessesIntent what types {bug|Type} are weak to
+WeaknessesIntent what types {ghost|Type} are weak to
+WeaknessesIntent what types {steel|Type} are weak to
+WeaknessesIntent what types {fire|Type} are weak to
+WeaknessesIntent what types {water|Type} are weak to
+WeaknessesIntent what types {grass|Type} are weak to
+WeaknessesIntent what types {electric|Type} are weak to
+WeaknessesIntent what types {psychic|Type} are weak to
+WeaknessesIntent what types {ice|Type} are weak to
+WeaknessesIntent what types {dragon|Type} are weak to
+WeaknessesIntent what types {dark|Type} are weak to
+WeaknessesIntent what types {fairy|Type} are weak to
 WeaknessesIntent what should I use against {normal|Type}
 WeaknessesIntent what should I use against {fighting|Type}
 WeaknessesIntent what should I use against {flying|Type}
@@ -178,6 +322,24 @@ WeaknessesIntent what should I use against {ice|Type}
 WeaknessesIntent what should I use against {dragon|Type}
 WeaknessesIntent what should I use against {dark|Type}
 WeaknessesIntent what should I use against {fairy|Type}
+WeaknessesIntent what I should use against {normal|Type}
+WeaknessesIntent what I should use against {fighting|Type}
+WeaknessesIntent what I should use against {flying|Type}
+WeaknessesIntent what I should use against {poison|Type}
+WeaknessesIntent what I should use against {ground|Type}
+WeaknessesIntent what I should use against {rock|Type}
+WeaknessesIntent what I should use against {bug|Type}
+WeaknessesIntent what I should use against {ghost|Type}
+WeaknessesIntent what I should use against {steel|Type}
+WeaknessesIntent what I should use against {fire|Type}
+WeaknessesIntent what I should use against {water|Type}
+WeaknessesIntent what I should use against {grass|Type}
+WeaknessesIntent what I should use against {electric|Type}
+WeaknessesIntent what I should use against {psychic|Type}
+WeaknessesIntent what I should use against {ice|Type}
+WeaknessesIntent what I should use against {dragon|Type}
+WeaknessesIntent what I should use against {dark|Type}
+WeaknessesIntent what I should use against {fairy|Type}
 WeaknessesIntent what should I attack {normal|Type} with
 WeaknessesIntent what should I attack {fighting|Type} with
 WeaknessesIntent what should I attack {flying|Type} with
@@ -196,6 +358,24 @@ WeaknessesIntent what should I attack {ice|Type} with
 WeaknessesIntent what should I attack {dragon|Type} with
 WeaknessesIntent what should I attack {dark|Type} with
 WeaknessesIntent what should I attack {fairy|Type} with
+WeaknessesIntent what I should attack {normal|Type} with
+WeaknessesIntent what I should attack {fighting|Type} with
+WeaknessesIntent what I should attack {flying|Type} with
+WeaknessesIntent what I should attack {poison|Type} with
+WeaknessesIntent what I should attack {ground|Type} with
+WeaknessesIntent what I should attack {rock|Type} with
+WeaknessesIntent what I should attack {bug|Type} with
+WeaknessesIntent what I should attack {ghost|Type} with
+WeaknessesIntent what I should attack {steel|Type} with
+WeaknessesIntent what I should attack {fire|Type} with
+WeaknessesIntent what I should attack {water|Type} with
+WeaknessesIntent what I should attack {grass|Type} with
+WeaknessesIntent what I should attack {electric|Type} with
+WeaknessesIntent what I should attack {psychic|Type} with
+WeaknessesIntent what I should attack {ice|Type} with
+WeaknessesIntent what I should attack {dragon|Type} with
+WeaknessesIntent what I should attack {dark|Type} with
+WeaknessesIntent what I should attack {fairy|Type} with
 WeaknessesIntent which attacks are good against {normal|Type}
 WeaknessesIntent which attacks are good against {fighting|Type}
 WeaknessesIntent which attacks are good against {flying|Type}
