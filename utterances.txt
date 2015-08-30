@@ -1,0 +1,24 @@
+MyColorIs my color is {red|FavoriteColor}
+MyColorIs my color is {yellow|FavoriteColor}
+MyColorIs my color is {green|FavoriteColor}
+MyColorIs my color is {blue|FavoriteColor}
+MyColorIs my color is {purple|FavoriteColor}
+MyColorIs my color is {orange|FavoriteColor}
+MyColorIs my favorite color is {red|FavoriteColor}
+MyColorIs my favorite color is {yellow|FavoriteColor}
+MyColorIs my favorite color is {green|FavoriteColor}
+MyColorIs my favorite color is {blue|FavoriteColor}
+MyColorIs my favorite color is {purple|FavoriteColor}
+MyColorIs my favorite color is {orange|FavoriteColor}
+MyColorIs {red|FavoriteColor}    is my color 
+MyColorIs {yellow|FavoriteColor} is my color 
+MyColorIs {green|FavoriteColor}  is my color 
+MyColorIs {blue|FavoriteColor}   is my color 
+MyColorIs {purple|FavoriteColor} is my color 
+MyColorIs {orange|FavoriteColor} is my color 
+MyColorIs {red|FavoriteColor}    is my favorite color 
+MyColorIs {yellow|FavoriteColor} is my favorite color 
+MyColorIs {green|FavoriteColor}  is my favorite color 
+MyColorIs {blue|FavoriteColor}   is my favorite color 
+MyColorIs {purple|FavoriteColor} is my favorite color 
+MyColorIs {orange|FavoriteColor} is my favorite color 
