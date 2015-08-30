@@ -1,10 +1,10 @@
 {
     "intents": [
       {
-        "intent": "MyColorIs",
+        "intent": "WeaknessesIntent",
         "slots": [
           {
-            "name": "FavoriteColor",
+            "name": "Type",
             "type": "LITERAL"
           }
         ]
