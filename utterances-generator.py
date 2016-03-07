@@ -31,7 +31,6 @@ phrases = [
 	"StrengthsIntent which types {FOO|Type} are good against\n"
 ]
 
-#testing upload 3/6
 types = [
     "normal",
     "fighting",
